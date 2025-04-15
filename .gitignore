@@ -1,0 +1,45 @@
+# Игнорирование node_modules
+node_modules/
+# Логи
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# Папки сборки
+dist/
+build/
+out/
+# Игнорирование кэш-файлов IDE (WebStorm и VSCode)
+.idea/
+.vscode/
+*.sublime-workspace
+# Игнорирование временных файлов
+.DS_Store
+Thumbs.db
+# Файлы зависимостей и конфигурации
+package-lock.json
+yarn.lock
+# Файлы окружения
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+# Файлы с тестами
+coverage/
+*.test.js
+*.spec.js
+# Игнорирование конфигурации для ESLint, Prettier (если у вас глобальные конфиги)
+.eslintcache
+prettier.config.js
+.prettierrc
+.eslintignore
+# Логи Webpack
+*.log
+# Игнорирование файлов из кэширования PWA
+.cache/
+.pwa/
+# Сторонние библиотеки или сгенерированные файлы, например, библиотеки или плагины
+vendor/
+# Ошибки и служебные файлы системы
+*.swp
+*.swo
