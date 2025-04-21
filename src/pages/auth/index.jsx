@@ -1,3 +1,3 @@
 import React from "react";
 
-export const Auth = () => <div>Страничка входа</div>
+export const AuthPage = () => <div>Страничка входа</div>
