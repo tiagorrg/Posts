@@ -8,13 +8,13 @@ import './index.css'
 import App from './App.jsx'
 import { Provider } from 'react-redux'
 
-import { Posts } from './pages/posts/index.jsx'
+import { PostsPage } from './pages/posts/index.jsx'
 import { Root } from './components/Root/index.jsx'
-import { DetailPost } from './pages/posts/detail/index.jsx'
-import { EditPost } from './pages/posts/edit/index.jsx'
-import { AddPost } from './pages/posts/add/index.jsx'
-import { Registration } from './pages/registration/index.jsx'
-import { Auth } from './pages/auth/index.jsx'
+import { DetailPostPage } from './pages/posts/detail/index.jsx'
+import { EditPostPage } from './pages/posts/edit/index.jsx'
+import { AddPostPage } from './pages/posts/add/index.jsx'
+import { RegistrationPage } from './pages/registration/index.jsx'
+import { AuthPage } from './pages/auth/index.jsx'
 import { store } from './redux/store.js'
 
 const router = createBrowserRouter([
@@ -28,27 +28,27 @@ const router = createBrowserRouter([
       },
       {
         path: 'posts',
-        element: <Posts />,
+        element: <PostsPage />,
       },
       {
         path: 'posts/:id',
-        element: <DetailPost />
+        element: <DetailPostPage />
       },
       {
         path: 'posts/:id/edit',
-        element: <EditPost />
+        element: <EditPostPage />
       },
       {
         path: 'posts/add',
-        element: <AddPost />
+        element: <AddPostPage />
       },
       {
         path: 'registration',
-        element: <Registration />
+        element: <RegistrationPage />
       },
       {
         path: 'auth',
-        element: <Auth />
+        element: <AuthPage />
       }
     ]
   }

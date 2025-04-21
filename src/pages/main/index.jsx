@@ -1,6 +1,6 @@
 import React from "react";
+import { Posts } from '../../components/Posts'
 import { Container } from "../../components/Container";
-import { Posts } from "../../components/Posts";
 import { Typo } from "../../components/Typo";
 
 const INITIAL_POSTS = [
@@ -18,13 +18,23 @@ const INITIAL_POSTS = [
         id: 3,
         title: 'Post 3',
         image: 'https://u.9111s.ru/uploads/202303/25/7a8360b3410f3f55ca642268e98fa08a.jpg'
+    },
+    {
+        id: 4,
+        title: 'Post 4',
+        image: 'https://u.9111s.ru/uploads/202303/25/7a8360b3410f3f55ca642268e98fa08a.jpg'
+    },
+    {
+        id: 5,
+        title: 'Post 5',
+        image: 'https://u.9111s.ru/uploads/202303/25/7a8360b3410f3f55ca642268e98fa08a.jpg'
     }
 ]
 
-export const PostsPage = () => (
+export const MainPage = () => (
     <>
-        <Typo>Публикации</Typo>
         <Container>
+            <Typo>Свежие публикации</Typo>
             <Posts posts={INITIAL_POSTS} />
         </Container>
     </>

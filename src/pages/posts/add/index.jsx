@@ -1,3 +1,3 @@
 import React from "react";
 
-export const AddPost = () => <div>Страничка добавления поста</div>
+export const AddPostPage = () => <div>Страничка добавления поста</div>
