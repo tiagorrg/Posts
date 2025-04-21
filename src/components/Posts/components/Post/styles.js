@@ -16,13 +16,3 @@ export const Title = styled.div`
     font-size: 24px;
     font-weight: bold;
 `
-
-export const DetailLink = styled(Link)`
-    color: black;
-    text-decoration: none;
-
-    &:hover {
-        color: darkred;
-        text-decoration: underline;
-    }
-`
