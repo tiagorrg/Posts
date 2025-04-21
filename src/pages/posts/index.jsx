@@ -2,24 +2,7 @@ import React from "react";
 import { Container } from "../../components/Container";
 import { Posts } from "../../components/Posts";
 import { Typo } from "../../components/Typo";
-
-const INITIAL_POSTS = [
-    {
-        id: 1,
-        title: 'Post 1',
-        image: 'https://u.9111s.ru/uploads/202303/25/7a8360b3410f3f55ca642268e98fa08a.jpg'
-    },
-    {
-        id: 2,
-        title: 'Post 2',
-        image: 'https://u.9111s.ru/uploads/202303/25/7a8360b3410f3f55ca642268e98fa08a.jpg'
-    },
-    {
-        id: 3,
-        title: 'Post 3',
-        image: 'https://u.9111s.ru/uploads/202303/25/7a8360b3410f3f55ca642268e98fa08a.jpg'
-    }
-]
+import { INITIAL_POSTS } from "./constants";
 
 export const PostsPage = () => (
     <>
