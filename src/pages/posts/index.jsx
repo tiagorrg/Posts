@@ -2,13 +2,14 @@ import React from "react";
 import { Container } from "../../components/Container";
 import { Posts } from "../../components/Posts";
 import { Typo } from "../../components/Typo";
-import { INITIAL_POSTS } from "./constants";
+import { useSelector } from 'react-redux'
 
-export const PostsPage = () => (
-    <>
+export const PostsPage = () => {
+    const posts = useSelector((state) => state.posts.list)
+
+    return <Container>
         <Typo>Публикации</Typo>
-        <Container>
-            <Posts posts={INITIAL_POSTS} />
-        </Container>
-    </>
-)
+        <Posts posts={posts} />
+    </Container>
+    
+}
