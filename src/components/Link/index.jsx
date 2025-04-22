@@ -1,8 +1,8 @@
 import React from "react";
 import * as SC from './styles'
 
-export const Link = ({ simple = true, children, ...props }) => {
+export const Link = ({ children, ...props }) => {
     return (
-        simple ? <SC.SimpleLink {...props}>{children}</SC.SimpleLink> : <SC.NavigationLink {...props}>{children}</SC.NavigationLink>
+        <SC.SimpleLink {...props}>{children}</SC.SimpleLink> 
     )
 }
