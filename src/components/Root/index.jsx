@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from 'react-router-dom'
 import * as SC from './styles'
-import { Container } from "../Container";
+import { Container } from "../ui/Container";
 
 export const Root = () => {
     
