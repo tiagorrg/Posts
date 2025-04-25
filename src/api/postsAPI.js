@@ -8,13 +8,16 @@ export const postsAPI = {
             console.log(ex)
         }
     },
-    fetchFreshPosts(limit = 3) {
+    fetchFreshPosts() {
         try {
-            return fetch(`https://jsonplaceholder.typicode.com/posts?_limit=${limit}&_sort=id&_order=desc`)
+            return fetch(
+                `https://jsonplaceholder.typicode.com/posts?&_sort=id&_order=desc`
+            )
                 .then(response => response.json())
                 .then(posts => posts)
         } catch (ex) {
-            console.log(ex)
+            console.error("Ошибка при запросе постов:", ex);
+            return []
         }
     },
     fetchById(id) {

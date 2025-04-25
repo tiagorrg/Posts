@@ -10,7 +10,7 @@ const rotate = keyframes`
 `;
 
 export const LoaderWrapper = styled.div`
-    margin-top: 20px;
+    margin-top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
