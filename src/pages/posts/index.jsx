@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux'
 import { useEffect } from "react";
 import { getPosts } from "../../redux/slices/postsSlice";
 import { useDispatch } from "react-redux"
+import Loader from "../../components/ui/Loader";
 
 export const PostsPage = () => {
     const { list, loading } = useSelector((state) => state.posts.posts)
@@ -18,7 +19,7 @@ export const PostsPage = () => {
     }, [list, dispatch])
 
     if(!list && loading) {
-        return <Container>Loading...</Container>
+        return <Container><Loader /></Container>
     }
     
     if(!list) {
