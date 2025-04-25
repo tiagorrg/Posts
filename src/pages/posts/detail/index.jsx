@@ -9,6 +9,7 @@ import { useSelector, useDispatch } from "react-redux"
 import * as SC from './styles'
 import { Modal } from "../../../components/ui/Modal";
 import { DeleteButton } from "../../../components/ui/DeleteButton";
+import Loader from "../../../components/ui/Loader";
 
 export const DetailPostPage = () => {
     const { id } = useParams()
@@ -44,7 +45,7 @@ export const DetailPostPage = () => {
     }, [id, dispatch, list])
 
     if (postForView.loading) {
-        return <Container>Loading...</Container>
+        return <Container><Loader /></Container>
     }
 
     if (!postForView.post || !('id' in postForView.post)) {
