@@ -17,8 +17,8 @@ export const getPosts = createAsyncThunk (
 
 export const getFreshPosts = createAsyncThunk (
     'posts/fetchFreshPosts',
-    async (limit) => {
-        return await postsAPI.fetchFreshPosts(limit)
+    async () => {
+        return await postsAPI.fetchFreshPosts()
     }
 )
 
@@ -56,6 +56,7 @@ export const postSlice = createSlice({
         },
         deletePost: (state, action) => {
             state.posts.list = state.posts.list.filter((post) => post.id !== action.payload)
+            state.freshPosts.posts = state.freshPosts.posts.filter((post) => post.id !== action.payload)
             state.postForView = {
                 post: null,
                 loading: false

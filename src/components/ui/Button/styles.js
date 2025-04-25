@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Button = styled.button`
     border: 1px solid black;
@@ -9,6 +9,11 @@ export const Button = styled.button`
     border-radius: 10px;
 
     &:hover {
-        background-color: whitesmoke;
+        background-color: ${props => props.disabled ? 'white' : 'whitesmoke'};
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
     }
 `

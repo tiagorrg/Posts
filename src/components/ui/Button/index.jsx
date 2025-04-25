@@ -1,4 +1,4 @@
 import React from "react";
 import * as SC from './styles'
 
-export const Button = ({onClick, children}) => <SC.Button onClick={onClick}>{children}</SC.Button>
+export const Button = ({children, ...rest}) => <SC.Button {...rest}>{children}</SC.Button>
